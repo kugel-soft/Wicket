@@ -69,7 +69,7 @@
     "url": "https://github.com/arthur-e/Wicket.git"
   },
   "scripts": {
-    "build": "uglifyjs wicket.js -o wicket.min.js;uglifyjs wicket-gmap3.js -o wicket-gmap3.min.js;uglifyjs wicket-arcgis.js -o wicket-arcgis.min.js;uglifyjs wicket-leaflet.js -o wicket-leaflet.min.js;",
+    "build": "uglifyjs wicket.js -o wicket.min.js && uglifyjs wicket-gmap3.js -o wicket-gmap3.min.js && uglifyjs wicket-arcgis.js -o wicket-arcgis.min.js && uglifyjs wicket-leaflet.js -o wicket-leaflet.min.js",
     "test": "./node_modules/mocha/bin/mocha -R tap tests/wicket-spec.js && ./node_modules/karma/bin/karma start"
   },
   "devDependencies": {
